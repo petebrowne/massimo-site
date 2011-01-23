@@ -27,9 +27,11 @@
       #content
         = find_and_preserve(yield)
       #footer
-        Built with massimo.
-        = link_to 'View Source', 'http://github.com/petebrowne/massimo-site'
-        %br
+        %p
+          Built with massimo.
+          = link_to 'View Source', 'http://github.com/petebrowne/massimo-site'
+        %p#copyright
+          &copy; 2010 Pete Browne. Released under the MIT License.
     #ribbon
       %a{ :href => 'http://github.com/petebrowne/massimo' }
         = image_tag 'http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png', :alt => 'Fork me on GitHub'
