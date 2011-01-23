@@ -1,0 +1,46 @@
+!!! 5
+%html{ :lang => 'en' }
+  %head
+    %meta{ :charset => 'utf-8' }
+    %title
+      = page.title
+      &ndash; massimo (a static website builder)
+    = stylesheet_link_tag 'main'
+  %body
+    #container
+      #header
+        %h1
+          = link_to 'massimo', '/'
+          %em a static website builder
+        #download
+          %a{ :href => 'http://github.com/petebrowne/massimo/zipball/master' }
+            = image_tag 'http://github.com/images/modules/download/zip.png', :width => 90, :height => 89
+          %a{ :href => 'http://github.com/petebrowne/massimo/tarball/master' }
+            = image_tag 'http://github.com/images/modules/download/tar.png', :width => 90, :height => 89
+      %ul#navigation
+        %li= nav_link_to('Getting Started', '/', page)
+        %li= nav_link_to('Usage', '/usage/', page)
+        %li= nav_link_to('Structure', '/structure/', page)
+        %li= nav_link_to('Configuration', '/configuration/', page)
+        %li= nav_link_to('Resources', '/resources/', page)
+        %li= nav_link_to('Metadata', '/metadata/', page)
+      #content
+        = find_and_preserve(yield)
+      #footer
+        Built with massimo.
+        = link_to 'View Source', 'http://github.com/petebrowne/massimo-site'
+        %br
+    #ribbon
+      %a{ :href => 'http://github.com/petebrowne/massimo' }
+        = image_tag 'http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png', :alt => 'Fork me on GitHub'
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5426773-9']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  
