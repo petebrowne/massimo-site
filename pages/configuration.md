@@ -1,10 +1,10 @@
-**Massimo** projects can be configured through config files located in the root of your project. These config files will automatically detected when you run massimo [commands](/massimo/usage).
+**Massimo** projects can be configured through a `config.rb` file located in the root of your project or by using command line options. The config file will automatically detected when you run massimo&nbsp;[commands](/usage/).
 
 
 config.rb
 ---------
 
-The prefered way is to use a `config.rb` file. In that file, you have access to all of the Site's methods. For&nbsp;example:
+In the `config.rb` file, you have access to all of the site's methods. For&nbsp;example:
 
     config.javascripts_url = '/js'
     config.stylesheets_url = '/css'
@@ -30,7 +30,7 @@ This config file does a few things:
 * It changes the URLs for the javascripts and stylesheets.
 * It changes the output path to `'_site'`
 * Uses Packr for javascripts compression and compresses the stylesheets during production mode
-* It creates a custom [resource](/massimo/resources/).
+* It creates a custom [resource](/resources/).
 * It creates a custom helper method to access the custom resources.
 
 *Note the `if config.environment.production?` block. This changes the configuration based on the environment setup in the command line.*

@@ -1,4 +1,4 @@
-Metadata can be added to Pages and [custom Resources](/massimo/resources) by using YAML. The YAML front matter must be the first thing in the file and takes the form of:
+Metadata can be added to Pages and [custom Resources](/resources/) by using YAML. The YAML front matter must be the first thing in the file and takes the form of:
 
     ---
     title: Using YAML Front Matter

@@ -19,7 +19,7 @@ A **massimo** project looks something like this, though each directory's path ca
   <tbody>
     <tr>
       <th>config.rb</th>
-      <td>The project's <a href="/massimo/config/">config file</a></td>
+      <td>The project's <a href="/configuration/">config file</a></td>
     </tr>
     <tr>
       <th>helpers</th>
