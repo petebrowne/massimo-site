@@ -13,9 +13,9 @@
           = link_to 'massimo', '/'
           %em a static website builder
         #download
-          %a{ :href => 'http://github.com/petebrowne/massimo/zipball/master' }
+          - link_to 'http://github.com/petebrowne/massimo/zipball/master' do
             = image_tag 'http://github.com/images/modules/download/zip.png', :width => 90, :height => 89
-          %a{ :href => 'http://github.com/petebrowne/massimo/tarball/master' }
+          - link_to 'http://github.com/petebrowne/massimo/tarball/master' do
             = image_tag 'http://github.com/images/modules/download/tar.png', :width => 90, :height => 89
       %ul#navigation
         %li= nav_link_to('Getting Started', '/', page)
@@ -33,7 +33,7 @@
         %p#copyright
           &copy; 2010 Pete Browne. Released under the MIT License.
     #ribbon
-      %a{ :href => 'http://github.com/petebrowne/massimo' }
+      - link_to 'http://github.com/petebrowne/massimo' do
         = image_tag 'http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png', :alt => 'Fork me on GitHub'
     :javascript
       var _gaq = _gaq || [];
