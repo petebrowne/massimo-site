@@ -2,6 +2,7 @@ A **massimo** project looks something like this, though each directory's path ca
 
     my-site/
       config.rb
+      config.ru
       helpers/
       javascripts/
         main.js
@@ -20,6 +21,10 @@ A **massimo** project looks something like this, though each directory's path ca
     <tr>
       <th>config.rb</th>
       <td>The project's <a href="/configuration/">config file</a></td>
+    </tr>
+    <tr>
+      <th>config.ru</th>
+      <td>A rackup file for running the <strong>massimo</strong> server using your handler of choice</a></td>
     </tr>
     <tr>
       <th>helpers</th>
