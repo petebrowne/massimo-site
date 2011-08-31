@@ -1,11 +1,12 @@
-**Massimo** sites are built using the command line. Run `massimo help` or `massimo help [command]` for more detailed usage information. All commands can be abbreviated, for example `generate` can be called with `g`, and `watch` with `w`.
+**Massimo** sites are built using the command line. Run `massimo help` or `massimo help [command]` for more detailed usage information. All commands can be abbreviated, for example `new` can be called with `n`, and `watch` with `w`.
 
-Generate
---------
 
-The first step after installation is to generate a new project. This can be done with the `generate` command:
+New
+----
 
-    massimo generate my-site-name
+The first step after installation is to generate a new project. This can be done with the `new` command:
+
+    massimo new my-site-name
     
 This will create a folder with the basic structure of a massimo project.
     

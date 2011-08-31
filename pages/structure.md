@@ -8,13 +8,13 @@ A **massimo** project looks something like this, though each directory's path ca
         main.js
       lib/
       pages/
-        index.haml
+        index.html.erb
       public/
       stylesheets/
-        main.sass
+        main.css.scss
       views/
          layouts/
-           main.haml
+           main.html.erb
            
 <table>
   <tbody>

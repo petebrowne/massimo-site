@@ -1,5 +1,6 @@
 Resources are the content that gets transformed or copied when building your site. Pages, javascripts, and stylesheets are all types of resources.
 
+
 Custom Resources
 ----------------
 
