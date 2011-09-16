@@ -2,7 +2,7 @@
 
 
 New
-----
+---
 
 The first step after installation is to generate a new project. This can be done with the `new` command:
 
